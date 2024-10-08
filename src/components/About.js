@@ -1,14 +1,14 @@
-import React from 'react'
-import Header from './partials/Header';
-import Footer from './partials/Footer';
+import React from 'react';
+import {useEffect} from 'react';
+import LayoutProvider from '../context/LayoutProvider';
+
 const About = ()=> {
+
   return (
-    <>
-      <Header />
-      <div>About</div>
-      <Footer />
-    </>
-    
+
+    <LayoutProvider>    
+      <main>About Us Content</main>
+    </LayoutProvider>
   )
 }
 export default About;

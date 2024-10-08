@@ -1,14 +1,12 @@
 import React from 'react'
-import Header from './partials/Header';
-import Footer from './partials/Footer';
+import LayoutProvider from '../context/LayoutProvider';
+
 
 const NotFound = ()=> {
   return (
-    <>
-      <Header />
-      <div>Page Not Found.</div>
-      <Footer />
-    </>
+      <LayoutProvider sidebar={true}>
+      <main>404 : Page Not Found</main>
+      </LayoutProvider>
    
   )
 }

@@ -4,10 +4,14 @@
 }
 
 .theme-light{
+    $background-color: #f7d0ee;
+    $background-color2: #333;
+    $text-color: #000;
+    $text-color2: #fff;
   
     .header{
-        background-color: #f8baf0;
-        color:black;
+        background-color: $background-color;
+        color:$text-color;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -23,11 +27,40 @@
                     a{
                         text-decoration: none;
                         font-weight: 400;
-                        color:#000;
+                        color:$text-color;
                     }
                 }
             }
         }
+    }
+
+    .content-wrap{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        aside{
+            width: 15%;
+            min-height: 85vh;
+            display: flex;
+            justify-self: end;
+        }
+        main{
+            width:85%;
+            min-height: 85vh
+        }
+
+    }
+
+    .footer{
+        border-top: 2px solid #a22;
+        background-color: $background-color2;
+        color:$text-color2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        bottom: 0;
+        position: relative;
     }
 }
 
@@ -56,5 +89,33 @@
                 }
             }
         }
+    }
+    .content-wrap{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        aside{
+            width: 15%;
+            min-height: 80vh;
+            display: flex;
+            justify-self: end;
+        }
+        main{
+            width:85%;
+            min-height: 80vh
+        }
+
+    }
+
+    .footer{
+        border-top: 2px solid #a22;
+        background-color: #000;
+        color:#fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        bottom: 0;
+        position: relative;
     }
 }

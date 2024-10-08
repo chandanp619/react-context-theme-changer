@@ -1,14 +1,13 @@
-import React from 'react';
-import Header from './partials/Header';
-import Fooer from './partials/Footer';
+import React, {useEffect} from 'react';
+import LayoutProvider from '../context/LayoutProvider';
 
 const  Home = () => {
+
   return (
-    <>
-      <Header />
-      <div>Home</div>
-      <Fooer />
-    </>
+
+    <LayoutProvider>
+      <main>Home</main>
+    </LayoutProvider>
   )
 }
 export default Home;
